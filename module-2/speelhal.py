@@ -1,9 +1,13 @@
+ticketkost = int(input("vul hier de prijs in centen in:"))
 
-vrienden = 4
-prijs_vip = 0.37
-permin = 5
-Totalmin = 45
+vrienden = int(input("vul hier het aantal personen in:"))
 
-prijs =   vrienden * prijs_vip * 9
+prijs_vip = int(input("vul hier de prijs van vip in centen in:"))
 
-print ("Dagje uit met" ' '+ str(vrienden) +' ' "mensen in speelhal met" ' ' + str(Totalmin) +' ' "minuten VR kost maar", prijs, "euro")
+permin = int(input("vul hier de vip minuten in:"))
+
+Totalmin = int(input("vul hier de totale minuten in:"))
+
+prijs = ticketkost / 100 * vrienden + Totalmin / permin * prijs_vip / 100 * vrienden
+
+print ("dagje uit met" ' '+ str(vrienden) +' ' "mensen in de speelhal met" ' ' + str(Totalmin) + ' ' "minuten vr kost maar", prijs, "euro")
