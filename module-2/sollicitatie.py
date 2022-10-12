@@ -1,4 +1,3 @@
-
 print (" Solicitatieformulier Circusdirecteur voor Circus HotelDeBotel ")
 print (" Er worden u een aantal vragen gesteld...                      ")
 print (" Gelieve die naar eer en geweten in te vullen.                 ")
@@ -9,6 +8,8 @@ print (" hier komen de vragen.                                         ")
 
 
 praktijk = int(input("Hoeveel jaar heeft u praktijkervaring met dieren-dressuur?:"))
+praktijk1 = int(input("Hoeveel jaar ervaring heeft u met jongleren?:"))
+praktijk2 = int(input("Hoeveel jaar ervaring heeft u met praktijkervaring met acrobatiek?:"))
 diploma = input ("Bent u in bezit van een Diploma MBO-4 ondernemen? ja/nee:")
 naam = input ("Wat is uw naam?:")
 rijbewijs = input ("Bent u in bezit van een geldig Vrachtwagen rijbewijs? ja/nee:")
@@ -34,7 +35,7 @@ gewicht = int(input ("Wat is uw gewicht? (in kg):"))
 voorhoofd = input ("Heeft u een lange voorhoofd? ja/nee:")
 kaas = input ("Heeft u ooit kaas gegeten? ja/nee:")
 
-if praktijk > 4 and diploma == "ja" and rijbewijs == "ja" and hoed == "ja" and (manvrouw == "vrouw" and krullen == "ja" and  krullenlengte > 20) or (manvrouw == "man" and snor == "ja" and snorLengte > 10) and lengte > 150 and gewicht > 90 and certificaat == "ja" and veter == "ja" and voorhoofd == "ja" and kaas == "ja":
+if (praktijk > 4 or praktijk1 > 5 or praktijk2 > 3 and diploma == "ja") and rijbewijs == "ja" and hoed == "ja" and ((manvrouw == "vrouw" and krullen == "ja" and  krullenlengte > 20) or (manvrouw == "man" and snor == "ja" and snorLengte > 10)) and lengte > 150 and gewicht > 90 and certificaat == "ja" and veter == "ja" and voorhoofd == "ja" and kaas == "ja":
     print ("Gefeliciteerd! U komt in aanmerking voor een sollicitatiegesprek, stuur snel uw CV!")
 else:
      print ("U voldoet niet aan onze eisen voor de functie van Circusdirecteur, het spijt ons!")

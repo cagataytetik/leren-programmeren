@@ -27,5 +27,3 @@ elif kaas == "nee":
             print ("Camembert")
         elif korst1 == "nee":
             print ("Mozzarella")
-                        
-    
