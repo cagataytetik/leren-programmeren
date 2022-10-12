@@ -35,7 +35,7 @@ gewicht = int(input ("Wat is uw gewicht? (in kg):"))
 voorhoofd = input ("Heeft u een lange voorhoofd? ja/nee:")
 kaas = input ("Heeft u ooit kaas gegeten? ja/nee:")
 
-if (praktijk > 4 or praktijk1 > 5 or praktijk2 > 3 and diploma == "ja") and rijbewijs == "ja" and hoed == "ja" and ((manvrouw == "vrouw" and krullen == "ja" and  krullenlengte > 20) or (manvrouw == "man" and snor == "ja" and snorLengte > 10)) and lengte > 150 and gewicht > 90 and certificaat == "ja" and veter == "ja" and voorhoofd == "ja" and kaas == "ja":
+if (praktijk > 4 or praktijk1 > 5 or praktijk2 > 3) and (diploma == "ja") and rijbewijs == "ja" and hoed == "ja" and ((manvrouw == "vrouw" and krullen == "ja" and  krullenlengte > 20) or (manvrouw == "man" and snor == "ja" and snorLengte > 10)) and lengte > 150 and gewicht > 90 and certificaat == "ja" and veter == "ja" and voorhoofd == "ja" and kaas == "ja":
     print ("Gefeliciteerd! U komt in aanmerking voor een sollicitatiegesprek, stuur snel uw CV!")
 else:
      print ("U voldoet niet aan onze eisen voor de functie van Circusdirecteur, het spijt ons!")
