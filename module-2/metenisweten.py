@@ -1,8 +1,11 @@
-a = int(input("geef een getal:"))
-b = int(input("geef een getal:"))
+a = input("geef een getal:")
+b = input("geef een getal:")
 
 max = a
 min = b
+
+print (f"het minimun is {min}")
+print (f"het maximum is {max}")
 
 if a > b:
     print (f"a is het grootste getal: {max}")
@@ -12,5 +15,3 @@ elif a < b:
 else:
     print (f"a en b zijn even groot")
 
-    print (f"het minimun is {min}")
-    print (f"het maximum is {max}")

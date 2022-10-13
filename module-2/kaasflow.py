@@ -23,7 +23,7 @@ elif kaas == "nee":
             print ("Foume d'Ambert")
     elif schimmel == "nee":
         korst1 = input("Heeft de kaas een korst?")
-        if korst1 ( "ja"):
+        if korst1 == "ja":
             print ("Camembert")
         elif korst1 == "nee":
             print ("Mozzarella")

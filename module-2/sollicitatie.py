@@ -5,8 +5,6 @@ print (" Als u aan de criteria voldoet dan komt u in                   ")
 print (" aanmerking voor een serieus sollicitatiegesprek!              ")
 print (" hier komen de vragen.                                         ")
 
-
-
 praktijk = int(input("Hoeveel jaar heeft u praktijkervaring met dieren-dressuur?:"))
 praktijk1 = int(input("Hoeveel jaar ervaring heeft u met jongleren?:"))
 praktijk2 = int(input("Hoeveel jaar ervaring heeft u met praktijkervaring met acrobatiek?:"))
@@ -25,8 +23,6 @@ elif manvrouw == "vrouw":
     krullen = input("Heeft u rood krullend haar? ja/nee:")
     if krullen == "ja":
         krullenlengte = int(input("Hoelang is uw rood krullend haar? (in cm):"))
-    
-    
 
 certificaat = input ("Heeft u een overleven met een gevaarlijk persoon certificaat? ja/nee:")
 veter = input ("Heeft u een Veterstrikdiploma? ja/nee:")
