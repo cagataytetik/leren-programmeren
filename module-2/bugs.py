@@ -3,8 +3,7 @@ import random
 naam = input('Wat is jouw naam?')
 print('Hallo', naam)
 
-favorieteseizoen = input(
-    f"Wat is jouw favorite seizoen {naam}? A) Lente, B) Zomer, C) Herfst of D) Winter?:")
+favorieteseizoen = input(f"Wat is jouw favorite seizoen {naam}? A) Lente, B) Zomer, C) Herfst of D) Winter?:")
 antwoord = favorieteseizoen
 
 if antwoord == "a":
@@ -32,7 +31,7 @@ if trueOrFalse:
 
 elif not trueOrFalse:
 
-    print('TBH, ik hou niet zo van {}...'.format(favorietekleur))
+    print('TBH, ik hou niet zo van'(favorietekleur))
 
 
 num1 = random.randint(1, 10)
@@ -50,7 +49,7 @@ try:
 
     else:
 
-        print('Nee dat klopt niet {}'.format(naam))
+        print('Nee dat klopt niet'(naam))
 
 except:
 
