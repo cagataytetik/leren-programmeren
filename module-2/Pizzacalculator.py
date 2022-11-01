@@ -8,6 +8,8 @@ Prijs_large = 11
 small = int(input("hoeveel small pizzas wilt u?"))
 medium = int(input("hoeveel medium pizzas wilt u?"))
 large = int(input("hoeveel large pizzas wilt u?"))
+if small >3:
+  raise Exception ("je eet wel veel")
 
 prijstotaal = small * Prijs_small + medium * Prijs_medium + large * Prijs_large
 

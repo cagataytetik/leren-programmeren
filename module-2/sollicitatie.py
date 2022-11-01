@@ -9,8 +9,14 @@ praktijk = int(input("Hoeveel jaar heeft u praktijkervaring met dieren-dressuur?
 praktijk1 = int(input("Hoeveel jaar ervaring heeft u met jongleren?:"))
 praktijk2 = int(input("Hoeveel jaar ervaring heeft u met praktijkervaring met acrobatiek?:"))
 diploma = input ("Bent u in bezit van een Diploma MBO-4 ondernemen? ja/nee:")
+if diploma == "nee":
+    raise Exception ("ben je dom ofzo")
 naam = input ("Wat is uw naam?:")
+if naam == 'ahmet':
+    raise Exception ("ahmet is geen leuke naam")
 rijbewijs = input ("Bent u in bezit van een geldig Vrachtwagen rijbewijs? ja/nee:")
+if rijbewijs == "nee":
+    raise Exception ("Hoezo solliciteer je dan")
 hoed = input ("Bent u in bezit van een hoge hoed? ja/nee:")
 manvrouw = input ("Bent u een vrouw of een man?:")
 
