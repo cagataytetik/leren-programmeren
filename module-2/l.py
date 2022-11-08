@@ -1,7 +1,18 @@
-from uuid import NAMESPACE_URL
-
+import random
 
 naam = input("hoe heet je?")
-getal = int(input("hoevaak wil je het printen?"))
-for x in range (getal):
-    print (f"je bent geweldig {naam}")
+aantal_complimenten = int(input("hoevaak wil je het printen?"))
+
+
+if aantal_complimenten == random.randint(1, 2) == 1:
+    for x in range (aantal_complimenten):
+        print (f"je bent geweldig {naam}")
+
+elif aantal_complimenten == random.randint(1, 2) == 2:
+    for x in range (aantal_complimenten):
+     print (f"goed gedaan {naam}")
+
+#variant 1 ==  lijsten
+#variant 2 != lijsten randint(1, 4)
+
+
