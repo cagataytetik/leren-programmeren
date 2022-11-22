@@ -18,7 +18,7 @@ if answer.lower()=='psg':
         print('correct')
 else:
         print('Wrong Answer :(')
- 
+
 answer=input('Question 3: wie heeft de ballondor gewonnen?')
 if answer.lower()=='benzema':
         score += 1
