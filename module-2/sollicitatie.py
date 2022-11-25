@@ -13,8 +13,8 @@ if diploma == "nee":
     raise Exception ("ben je dom ofzo")
 naam = input ("Wat is uw naam?:")
 if naam == 'ahmet':
-    raise Exception ("ahmet is geen leuke naam")
-rijbewijs = input ("Bent u in bezit van een geldig Vrachtwagen rijbewijs? ja/nee:")
+    raise Exception ("Ahmet is geen leuke naam")
+rijbewijs = input ("Bent U in bezit van een geldig Vrachtwagen rijbewijs? ja/nee:")
 if rijbewijs == "nee":
     raise Exception ("Hoezo solliciteer je dan")
 hoed = input ("Bent u in bezit van een hoge hoed? ja/nee:")

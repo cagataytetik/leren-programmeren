@@ -7,4 +7,4 @@ elif "pak een nieuwe kaart":
 if nieuwekaart == "ja":
     print ("je kaart is gelegd je beurt is doorgegeven")
 else: 
-    print ("je beurt is doorgegeven")
+    print ("je beurt is Doorgegeven")

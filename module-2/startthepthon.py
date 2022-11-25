@@ -1,4 +1,4 @@
-gastheer = input("Wie is de gastheer")
+gastheer = input("Wie is de gastheer?:")
 gasten = 6
 drank = True
 chips = False

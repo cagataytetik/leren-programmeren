@@ -1,4 +1,4 @@
-print (f" cagatay tetik pizza calculator")
+print (f" cagatay Tetik pizza calculator:")
 
 
 Prijs_small = 5
