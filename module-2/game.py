@@ -30,7 +30,7 @@ else:
        vraag5 = input("Je bent voor hout aan t zoeken je hoort rare geluiden ga je erop af? (ja of nee)?: ").lower()
        if vraag5 == "ja":
             print("Je vind een portaal je stapt erin en hij brengt je thuis gefeliciteerd!!")
-            exit()
+            exit() 
 
        else:
         print("Je gaat weer terug hout zoeken maar je valt in een trap... R.I.P")
