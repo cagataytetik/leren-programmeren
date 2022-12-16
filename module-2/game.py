@@ -8,6 +8,7 @@ else:
     print("Watje...")
     exit()
 
+
 if vraag1 == 'a':
     print("Je ging zonder water naar de woestijn je sterfte uiteindelijk van de dorst....")
     exit()
