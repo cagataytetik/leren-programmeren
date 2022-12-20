@@ -1,12 +1,11 @@
 naam = input("Wat is jou naam?: ")
-
 ready = input("Ben je ready om een avontuur te beleven? (ja of nee)?: ")
 
 if ready == "ja":
-    vraag1 = input(f"Oke {naam} naar waar wil je toe A(Woestijn, B(Bergen, C(Bos: ")
+    vraag1 = input(f"Oke {naam} waar wil je naar toe A(Woestijn, B(Bergen, C(Bos: ")
 else:
     print("Watje...")
-    exit()
+    
 
 
 if vraag1 == 'a':
@@ -16,15 +15,15 @@ if vraag1 == 'a':
         if vraag3 == "links":
             print("je komt een vliegtuig tegen die je brengt naar huis Gefeliciteerd")
         elif vraag3 == "rechts":
-            print("je ging dood door de warmte")
-    if vraag2 == "nee":
-        print("je gaat dood door de warmte")
-    exit()
+            print("je werd gebeten door een reptiel door het gif sterf je... R.I.P")
+    elif vraag2 == "nee":
+        print("je droogt uit... R.I.P")
+    
 elif vraag1 == "b":
     vraag4 = input("Je klimt op de berg het begint steeds kouder te worden... Je ziet een een grot.. A(in de grot lopen? B(verder lopen?: ")
     if vraag4 == "a":
         print("Je werd door een beer opgegeten in de grot R.I.P.....")
-        exit()
+        
     else:
         vraag5 = input("Je liep verder en je kwam een huisje tegen wil je naar die huisje gaan? (ja of nee)?: ")
         if vraag5 == "ja":
@@ -38,10 +37,8 @@ else:
        vraag7 = input("Je bent voor hout aan t zoeken je hoort rare geluiden ga je erop af? (ja of nee)?: ")
        if vraag7 == "ja":
             print("Je vind een portaal je stapt erin en hij brengt je thuis gefeliciteerd!!")
-            exit() 
-
        else:
         print("Je gaat weer terug hout zoeken maar je valt in een trap... R.I.P")
 
     else:
-        print("Je bent verdwaald geraakt in het bos je gaat dood van het honger R.I.P")
+        print("Je bent verdwaald geraakt in het bos je gaat dood van de honger R.I.P")
