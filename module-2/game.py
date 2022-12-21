@@ -15,9 +15,9 @@ if vraag1 == 'a' or vraag1 == "A":
         vraag3 = input("je krijgt de keuze om 5 kilometer naar rechts te lopen of naar links wat kies je (links of rechts)")  
         if vraag3 == "links" or vraag3 == "Links":
             print("je komt een vliegtuig tegen die je brengt naar huis Gefeliciteerd")
-        elif vraag3 == "rechts" or "Rechts":
+        elif vraag3 == "rechts" or vraag3 == "Rechts":
             print("je werd gebeten door een reptiel door het gif sterf je... R.I.P")
-    elif vraag2 !="ja" or vraag2 == "ja":
+    elif vraag2 !="ja":
         print("je droogt uit... R.I.P")
     
 elif vraag1 == "b" or vraag1 == "B":
@@ -30,7 +30,7 @@ elif vraag1 == "b" or vraag1 == "B":
         vraag5 = input("Je liep verder en je kwam een huisje tegen wil je naar die huisje gaan? (ja of nee)?: ")
         if vraag5 == "ja" or vraag5 == "ja":
             print("Je hebt een wizard in het huis gevonden hij teleporteerd je terug naar de bestemming... Gefeliciteerd!")
-            exit()
+
         else:
             print("Waarom ging je niet naar het huisje? je friest nu dood... R.I.P")
 else:
