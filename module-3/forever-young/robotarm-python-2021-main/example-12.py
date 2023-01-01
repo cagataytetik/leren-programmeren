@@ -9,11 +9,9 @@ for b in range(9):
         for f in range(rechts-b):
             robotArm.moveRight()
         robotArm.drop()
-        for t in range(b):
+        for t in range(links-b):
             robotArm.moveLeft()
     else:
         robotArm.drop()
     robotArm.moveRight()
-    
-
 robotArm.wait()
