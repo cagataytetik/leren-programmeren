@@ -1,15 +1,56 @@
 import random
-AantalRondes = 20
-KansenOmTeRaden = 10
-kansen = 0
-punten = 0
-rondes = 0
+aantalBeurten = 0
+score = 0
+ronde_teller = 0
+ronde_limiet = 20
 
-while rondes < AantalRondes:
-    raden = input("Wil je een getal raden? :").lower()
+print('Wat is je naam?')
+mijnNaam = input()
+while True:
+    raden = input("Wil je een getal raden (ja of nee)?")
     if raden == "nee":
-        print(f'je hebt {punten} punten in {AantalRondes} rondes')
-        exit()
+        break
+    elif ronde_teller == ronde_limiet:
+        break
+    elif raden == "ja":
+        getal = random.randint(1, 1000)
+    print('OK ' + mijnNaam + ', ik denk aan een getal tussen 1 en 1000.')
+    while aantalBeurten < 10:
+        print('Raad eens.')
+        poging = input()
+        poging = int(poging)
+        aantalBeurten = aantalBeurten + 1
+        if poging < getal:
+            print('Je hebt te laag geraden.') 
+        if poging > getal:
+            print('Je hebt te hoog geraden.')
+        if (poging > getal and poging - getal <= 50 and poging - getal > 20) or (poging < getal and getal - poging <= 50 and getal - poging > 20):
+            print ("maar je bent warm")
+        if (poging > getal and poging - getal <= 20) or (poging < getal and getal - poging <= 20):
+            print ("maar je bent heel warm")
+        if poging == getal:
+            break
+    if poging == getal:
+        score = str(score)
+        score = score + 1
+        aantalBeurten = str(aantalBeurten)
+        print('Goedzo, ' + mijnNaam + '! Je hebt het getal geraden in ' + aantalBeurten + ' beurten!')
+        print ('Je huidige score is ' + score)
+    if poging != getal:
+        getal = str(getal)
+        print('Jammer. Het getal waar ik aan dacht was ' + getal + '.')
 
-nummer = random.randint (1,1000)
-print (nummer)
+    doorgaan = input("Wil je doorgaan (ja of nee)?")
+    aantalBeurten = 0
+
+    if doorgaan == "ja":
+        ronde_teller = ronde_teller + 1
+        score = str(score)
+        ronde_teller = str(ronde_teller)
+        print ('Je huidige score is ' + score + ' in ronde ' + ronde_teller)
+
+    if doorgaan == "nee":
+        ronde_teller = ronde_teller + 1
+        score = str(score)
+        ronde_teller = str(ronde_teller)
+        print ('Totziens. Je huidige score is ' + score + ' in ronde ' + ronde_teller )
