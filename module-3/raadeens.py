@@ -24,10 +24,11 @@ while True:
             print('Je hebt te laag geraden.')
         if poging > getal:
             print('Je hebt te hoog geraden.')
-        if (poging > getal and poging - getal <= 50 and poging - getal > 20) or (poging < getal and getal - poging <= 50 and getal - poging > 20):
-            print ("maar je bent warm")
-        if (poging > getal and poging - getal <= 20) or (poging < getal and getal - poging <= 20):
+        verschil = abs (poging - getal)
+        if verschil <20:
             print ("maar je bent heel warm")
+        elif verschil <50:
+            print ("maar je bent warm")
         if poging == getal:
             break
     if poging == getal:
@@ -46,6 +47,6 @@ while True:
         ronde_teller = ronde_teller + 1
         print ('Je huidige score is ' , score , ' in ronde ' , ronde_teller)
 
-    if doorgaan == "nee":
+    elif doorgaan == "nee":
         ronde_teller = ronde_teller + 1
         print ('Totziens. Je huidige score is ' ,score , ' in ronde ' , ronde_teller )
