@@ -24,19 +24,20 @@ while True:
             print('Je hebt te laag geraden.')
         elif poging > getal:
             print('Je hebt te hoog geraden.') 
+        elif poging == getal:
+            score = score + 1
+            aantalBeurten = str(aantalBeurten)
+            print('Goedzo, ' + mijnNaam + '! Je hebt het getal geraden in ' + aantalBeurten + ' beurten!')
+            print ("Je huidige score is", score)
+            break
         verschil = abs (poging - getal)
         if verschil <=20:
             print ("maar je bent heel warm")
         elif verschil <=50:
             print ("maar je bent warm")
-        if poging == getal:
-            break
-    if poging == getal:
-        score = score + 1
-        aantalBeurten = str(aantalBeurten)
-        print('Goedzo, ' + mijnNaam + '! Je hebt het getal geraden in ' + aantalBeurten + ' beurten!')
-        print ("Je huidige score is", score)
-    elif poging != getal:
+        
+   
+    if poging != getal:
         getal = str(getal)
         print('Jammer. Het getal waar ik aan dacht was ' ,getal , '.')
 
