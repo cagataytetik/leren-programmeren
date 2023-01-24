@@ -23,21 +23,22 @@ while True:
         if poging < getal:
             print('Je hebt te laag geraden.')
         elif poging > getal:
-            print('Je hebt te hoog geraden.')
-        elif poging == getal:
-            score = score + 1
-            aantalBeurten = str(aantalBeurten)
-            print('Goedzo, ' + mijnNaam + '! Je hebt het getal geraden in ' + aantalBeurten + ' beurten!')
-            print ("Je huidige score is", score)
-            break
+            print('Je hebt te hoog geraden.') 
         verschil = abs (poging - getal)
-        if verschil <20:
+        if verschil <=20:
             print ("maar je bent heel warm")
-        elif verschil <50:
+        elif verschil <=50:
             print ("maar je bent warm")
-        elif poging != getal:
-            getal = str(getal)
-            print('Jammer. Het getal waar ik aan dacht was ' ,getal , '.')
+        if poging == getal:
+            break
+    if poging == getal:
+        score = score + 1
+        aantalBeurten = str(aantalBeurten)
+        print('Goedzo, ' + mijnNaam + '! Je hebt het getal geraden in ' + aantalBeurten + ' beurten!')
+        print ("Je huidige score is", score)
+    elif poging != getal:
+        getal = str(getal)
+        print('Jammer. Het getal waar ik aan dacht was ' ,getal , '.')
 
     doorgaan = input("Wil je doorgaan (ja of nee)?")
     aantalBeurten = 0
