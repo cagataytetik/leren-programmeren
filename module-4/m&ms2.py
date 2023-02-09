@@ -9,5 +9,5 @@ for a in range(mms):
         zak.update({kleur: getal})
     elif kleur in zak:  
         zak[kleur] += 1
-
-print(zak) 
+        
+print(zak)
