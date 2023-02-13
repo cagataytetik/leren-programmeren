@@ -10,6 +10,6 @@ for a in soorten:
 random.shuffle(deck)
 for d in range(1,8):
     kaart = random.choice(deck)
-    print(f"kaart {d}: {kaart}")
+    print(f"kaart {deck}: {kaart}")
     deck.remove(kaart)
 print(f"deck (47 kaarten): {deck}")
