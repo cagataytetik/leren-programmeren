@@ -8,8 +8,9 @@ for a in soorten:
     for c in range(2,10,1):
         deck.append(f"{a} {c}")
 random.shuffle(deck)
+print (deck)
 for d in range(1,8):
-    kaart = random.choice(deck)
-    print(f"kaart {deck}: {kaart}")
+    kaart = deck[0]
+    print(f"kaart {d}: {kaart}")
     deck.remove(kaart)
 print(f"deck (47 kaarten): {deck}")
