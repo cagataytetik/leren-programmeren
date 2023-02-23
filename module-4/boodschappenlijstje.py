@@ -11,5 +11,5 @@ while True:
         bag[product] += aantal
 print("-[ BOODSCHAPPENLIJST ]-")
 for product, aantal in bag.items():
-    print(f"{product}x {aantal}")
+    print(f"{product} x {aantal}")
 print("-----------------------")
