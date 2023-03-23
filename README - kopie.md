@@ -1,3 +1,2 @@
 # manti
-# horeca app
-# flowchart 
+# horeca-app
