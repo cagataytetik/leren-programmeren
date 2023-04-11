@@ -1,0 +1,16 @@
+@font-face {
+	font-family: Top Secret Stamp;
+	src: url(Top\ Secret\ Stamp.ttf);
+}
+button#blauweKnop {
+	background-color: blue;
+	color: white;
+	font-family: "Top Secret Stamp";
+	width: 100px;
+	height: 100px;
+}
+
+button#blauweKnop:hover {
+	background-color: red;
+	text-decoration: underline;
+}
